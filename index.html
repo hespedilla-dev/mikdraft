@@ -111,12 +111,14 @@
                 animation-duration: 3s;
                 animation-name: spin;
                 animation_timing-function: linear;
+                animation_fill-mode: forwards;
         
             }
     @keyframes spin{
         0%{
-
-
+        }
+        50%{
+            scale: 2;
         }
         100%{
           transform: rotate(360deg);
