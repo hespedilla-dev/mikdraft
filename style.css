@@ -1,99 +1,108 @@
-<style>
-          header {
-                text-align: center;
-                padding: 10px;
-                
-            }
 
-            h1 {
-                text-align: center;
-                color: #f9f5f7;
-                font-size: 70px;
-                margin-bottom: 5px;
-            }
+header {
+   text-align: center;
+   padding: 10px;
+}
 
-            h2 {
-                text-align: center;
-                color: #fefefe;
-                font-size: 30px;
-                margin-bottom: 5px;
-            }
 
-            p {
-                text-align: center;
-                color: #333;
-                font-family: 'times new roman', serif;
-                font-size: 18px;
-                margin-bottom: 20px;
-            }
+h1 {
+  text-align: center;
+  color: #f9f5f7;
+  font-size: 70px;
+  margin-bottom: 5px;   
+}
 
-            footer {
-                text-align: center;
-                padding: 5px;
-                background-color: 67#ffc5e5;
-                color: #333;
-                font-size: 8px;
-                line-height: 0.5px;
-            }
+
+h2 {
+  text-align: center;
+  color: #fefefe;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+
+p {
+  text-align: center;
+  color: #333;
+  font-family: 'times new roman', serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: 67#ffc5e5;
+  color: #333;
+  font-size: 8px;
+  line-height: 0.5px;
+}
+
           
-          body {
-                background-image: url(images/mikdraft_bg.jpeg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                height: 100vh;
-            }
+body {
+  background-image: url(images/mikdraft_bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
 
-          .Features {
-                text-align: left;
-                list-style-type: disc;
-                margin-left: 20px;
-            }
 
-            ul {
-                text-align: left;
-                list-style-type: disc;
-                color: #333;
-                font-size: 18px;
-                margin-bottom: 20px;
-            }
+.Features {
+  text-align: left;
+  list-style-type: disc;
+  margin-left: 20px;
+}
 
-            img {
-                display: block;
-                margin: 0 auto;
-            }
 
-            .search-box {
-                font-size: 30px;
-                align-items: center;
-                margin: 20px auto;
-                width: fit-content;
-                border: none;
-                outline: none;
-                display: flex;
-                position: center;
-                border-radius: 2.5em;
-                background-color: white;
-                text-align: center;
-                size: 30px;
-                padding: 10px 20px;
-                font-border: none;
+ul {
+  text-align: left;
+  list-style-type: disc;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-            }
 
-            .logo {
-                display: block;
-                margin: 0 auto;
-                width: 200px;
-                height: 200px;
+img {
+  display: block;
+  margin: 0 auto;
+}
 
-                animation-duration: 2s;
-                animation-name: spin;
-                animation_timing-function: linear;
-                animation-iteration-count: 1;
-                animation_fill-mode: forwards;
-        
+
+.search-box {
+  font-size: 30px;
+  align-items: center;
+  margin: 20px auto;
+  width: fit-content;
+  border: none;
+  outline: none;
+  display: flex;
+  position: center;
+  border-radius: 2.5em;
+  background-color: white;
+  text-align: center;
+  size: 30px;
+  padding: 10px 20px;
+  font-border: none;
+}
+
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+
+  animation-duration: 2s;
+  animation-name: spin;
+  animation_timing-function: linear;
+  animation-iteration-count: 1;
+  animation_fill-mode: forwards;
+   
+  
             }
     @keyframes spin{
         0%{
@@ -107,4 +116,24 @@
             
         }
     }
-        </style>
+
+
+.navbar ul{
+    list-style-type: none;
+    background color: #ffc5e5;
+    padding: 0px;
+    margin: 0px
+    overflow: hidden
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-allign: center;
+}
+
+.navbar a:hover{
+    background-color: #f9f5f7;
+}
