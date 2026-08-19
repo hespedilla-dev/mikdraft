@@ -86,7 +86,6 @@ img {
   text-align: center;
   size: 30px;
   padding: 10px 20px;
-  font-border: none;
 }
 
 
@@ -98,9 +97,9 @@ img {
 
   animation-duration: 2s;
   animation-name: spin;
-  animation_timing-function: linear;
+  animation-timing-function: linear;
   animation-iteration-count: 1;
-  animation_fill-mode: forwards;
+  animation-fill-mode: forwards;
    
   
             }
@@ -131,7 +130,6 @@ img {
     text-decoration: none;
     padding: 15px;
     display: block;
-    text-allign: center;
 }
 
 .navbar a:hover {
