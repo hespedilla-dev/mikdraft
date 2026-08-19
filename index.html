@@ -4,31 +4,177 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mikdraft</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
+
+<style>
+header {
+   text-align: center;
+   padding: 10px;
+}
+
+
+h1 {
+  text-align: center;
+  color: #f9f5f7;
+  font-size: 70px;
+  margin-bottom: 5px;   
+}
+
+
+h2 {
+  text-align: center;
+  color: #fefefe;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+
+p {
+  text-align: center;
+  color: #333;
+  font-family: 'times new roman', serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: 67#ffc5e5;
+  color: #333;
+  font-size: 8px;
+  line-height: 0.5px;
+}
+
+          
+body {
+  background-image: url(images/mikdraft_bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+
+.Features {
+  text-align: left;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+
+ul {
+  text-align: left;
+  list-style-type: disc;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.search-box {
+  font-size: 30px;
+  align-items: center;
+  margin: 20px auto;
+  width: fit-content;
+  border: none;
+  outline: none;
+  display: flex;
+  position: center;
+  border-radius: 2.5em;
+  background-color: white;
+  text-align: center;
+  size: 30px;
+  padding: 10px 20px;
+  font-border: none;
+}
+
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+
+  animation-duration: 2s;
+  animation-name: spin;
+  animation_timing-function: linear;
+  animation-iteration-count: 1;
+  animation_fill-mode: forwards;
+   
+  
+            }
+    @keyframes spin{
+        0%{
+        }
+        50%{
+            scale: 2;
+        }
+        100%{
+          transform: rotate(360deg);
+          border-radius: 50%;
+            
+        }
+    }
+
+
+.navbar ul {
+    list-style-type: none;
+    background color: #ffc5e5;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-allign: center;
+}
+
+.navbar a:hover {
+    background-color: #f9f5f7;
+}
+
+.navbar li {
+    float: left;
+}
+</style>
+
+
     <body>
-     <header>
+      <header>
         <h1>Mikdraft</h1>
         <p>Draw. Draft. Create.</p>
         <section>
             <h2>Hanna Kim Espedilla</h2>
             <p>Bringing your creative blueprints to life.</p>
-        <img class="logo" src="Mikdraft_logo.png" alt="Mikdraft_Logo" width="200" height="200">
+            <img class="logo" src="Mikdraft_logo.png" alt="Mikdraft_Logo" width="200" height="200">
         </section>
-
-          <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>  
 
         <ul>
            <li><a href="https://hespedilla-dev.github.io/mikdraft/">Mikdraft</a></li>
         </ul>
+      </header>
 
-     </header>
+      <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>  
 
       <main>
         <form class="search-box">
