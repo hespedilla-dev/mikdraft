@@ -120,7 +120,7 @@ img {
 
 .navbar ul {
     list-style-type: none;
-    background color: #ffc5e5;
+    background-color: pink;
     padding: 0px;
     margin: 0px;
     overflow: hidden
