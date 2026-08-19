@@ -122,7 +122,7 @@ img {
     list-style-type: none;
     background color: #ffc5e5;
     padding: 0px;
-    margin: 0px
+    margin: 0px;
     overflow: hidden
 }
 
@@ -136,4 +136,8 @@ img {
 
 .navbar a:hover{
     background-color: #f9f5f7;
+}
+
+.navbar li{
+    float: left;
 }
