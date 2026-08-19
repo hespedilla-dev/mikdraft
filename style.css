@@ -118,7 +118,7 @@ img {
     }
 
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     background color: #ffc5e5;
     padding: 0px;
@@ -126,7 +126,7 @@ img {
     overflow: hidden
 }
 
-.navbar a{
+.navbar a {
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -134,10 +134,10 @@ img {
     text-allign: center;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: #f9f5f7;
 }
 
-.navbar li{
+.navbar li {
     float: left;
 }
