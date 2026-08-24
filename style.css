@@ -69,6 +69,7 @@ ul {
 img {
   display: block;
   margin: 0 auto;
+  border-radius: 25px;
 }
 
 
@@ -94,8 +95,7 @@ img {
   margin: 0 auto;
   width: 200px;
   height: 200px;
-
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: spin;
   animation-timing-function: linear;
   animation-iteration-count: 1;
@@ -115,6 +115,7 @@ img {
             
         }
     }
+
 
 
 .navbar ul {
@@ -138,4 +139,16 @@ img {
 
 .navbar li {
     float: left;
+}
+
+.navbar .navbar {
+  color: pink;
+}
+
+table {
+  border-collapse: collapse;
+}
+  
+td, th {
+  border: 1px solid white; background-color: #ffc5e675; padding: 18px 30px:
 }

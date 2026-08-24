@@ -80,6 +80,10 @@ img {
   margin: 0 auto;
 }
 
+img :hover {
+  motion: reverse;
+}
+
 
 .search-box {
   font-size: 30px;
@@ -95,7 +99,6 @@ img {
   text-align: center;
   size: 30px;
   padding: 10px 20px;
-  font-border: none;
 }
 
 
@@ -105,11 +108,11 @@ img {
   width: 200px;
   height: 200px;
 
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: spin;
-  animation_timing-function: linear;
+  animation-timing-function: linear;
   animation-iteration-count: 1;
-  animation_fill-mode: forwards;
+  animation-fill-mode: forwards;
    
   
             }
@@ -117,7 +120,7 @@ img {
         0%{
         }
         50%{
-            scale: 2;
+            scale: 1.2;
         }
         100%{
           transform: rotate(360deg);
@@ -129,10 +132,9 @@ img {
 
 .navbar ul {
     list-style-type: none;
-    background color: #ffc5e5;
     padding: 0px;
     margin: 0px;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .navbar a {
@@ -140,7 +142,6 @@ img {
     text-decoration: none;
     padding: 15px;
     display: block;
-    text-allign: center;
 }
 
 .navbar a:hover {
@@ -189,7 +190,7 @@ img {
             <p>Explore our range of drafting essentials designed to enhance your creative process.</p>
         </div>
 
-        <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 10px;">
+        <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 50px;">
         <article>
             <h3>Mikdraft Adjustable Drafting Table</h3>
             <p>Adjustable Pink & White Drafting Table.
@@ -203,14 +204,15 @@ img {
               <li>Sturdy Construction</li>
             </ul>
             <p><strong>₱3,500.00</strong></p>
-            <img src="images/mikdraft_drafting_table.jpeg" alt="mikdraft-drafting-table" width="300" height="300" position="center">
+            <img src="images/mikdraft_drafting_table.jpeg" alt="mikdraft-drafting-table" width="200" height="200" position="center">
+            <a href="products/mikdraft-adjustable-drafting-table.html" class="details">View Details</a>
         </article>
           <a href="https://hespedilla-dev.github.io/mikdraft/"><position="center"><button type="button">Add to cart.</button></a>
-        </div>
+          </div>
 
         <br>
 
-        <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 10px;">
+     <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 50px;">
         <article>
         <h3>Mikdraft Tracing Paper</h3>
         <p>Achieve crisp, precise overlays and sharp line transfers with this premium translucent tracing paper pack.
@@ -230,7 +232,7 @@ img {
 
         <br>
 
-        <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 10px;">
+       <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 50px;">
     <article>
         <h3>Mikdraft Ruler Set</h3>
         <p>Add accuracy and style to your workspace with this complete 6-piece pink drafting set.
@@ -246,11 +248,11 @@ img {
         <img src="images/6pcs_Pink_Ruler_Set.jpeg" alt="Product 3" width="200" height="200" position="center">
     </article>
       <a href="https://hespedilla-dev.github.io/mikdraft/"><position="center"><button type="button">Add to cart.</button></a>
-        </div>
+      </div>
 
         <br>
 
-        <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 10px;">
+        <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 50px;">
     <article>
         <h3>Mikdraft Math Set</h3>
         <p>Elevate your math and drafting setup with style and precision. This complete 8-piece geometry kit features a chic pastel pink aesthetic, combining durability with functional design for students, teachers, and design enthusiasts alike.</p>
@@ -265,7 +267,7 @@ img {
         <img src="images/mikdraft_math_set.jpeg" alt="Product 3" width="200" height="200" position="center">
     </article>
       <a href="https://hespedilla-dev.github.io/mikdraft/"><position="center"><button type="button">Add to cart.</button></a>
-        </div>
+      </div>
       </main>
 
     <footer>
