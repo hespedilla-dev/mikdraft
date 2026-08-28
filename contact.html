@@ -55,18 +55,65 @@
        </nav>
       </header>
 
+
+      <!-- ========================= This part shows the form ========================== -->
+
     <main>
-     <p>Contact Information:</p>
-     
-     <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 10px;">
-     <p>For more information, contact us through:</p>
-        <ul>
-           <li><p>Email: <a href="mailto:hannakim.espedilla@tup.edu.ph">hannakim.espedilla@tup.edu.ph</a></p></li>
-           <li><p>Phone: <a href="tel:+639123456789">+63 949 910 5002</a></p></li>
-           <li><p>facebook: <a href="https://www.facebook.com/hannaespedilla">Hanna Kim Espedilla</a></p></li>
-           <p>&copy; 2026 Mikdraft. All rights reserved.</p>
-        </ul>
-     </div>
+        <h1>Contact Us</h1>
+        
+        <form action="#" method="POST" class="form">
+            <fieldset>
+                <legend>Your details</legend>
+
+                <!-- 1. Name: Required text input -->
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- 2. Email: Required email input -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- 3. Subject: Select dropdown with 4 options -->
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="product-question">Product question</option>
+                        <option value="order-status">Order status</option>
+                        <option value="wholesale-enquiry">Wholesale enquiry</option>
+                        <option value="something-else">Something else</option>
+                    </select>
+                </div>
+
+                <!-- 4. Message: Required textarea -->
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <!-- Submit button with action-oriented text -->
+                <div>
+                    <button type="submit">Send message</button>
+                </div>
+
+            </fieldset>
+        </form>
+Sent
+Compose
+Write to
+
+
+     <footer>
+        <p>Contact Information:</p>
+        <p>Email: <a href="mailto:hannakim.espedilla@tup.edu.ph">hannakim.espedilla@tup.edu.ph</a></p>
+        <p>Phone: <a href="tel:+639123456789">+63 949 910 5002</a></p>
+        <p>facebook: <a href="https://www.facebook.com/hannaespedilla">Hanna Kim Espedilla</a></p>
+        <p>&copy; 2026 Mikdraft. All rights reserved.</p>
+    </footer>
      </main>
 
 </body>

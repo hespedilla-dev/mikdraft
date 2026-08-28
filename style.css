@@ -150,5 +150,48 @@ table {
 }
   
 td, th {
-  border: 1px solid white; background-color: #ffc5e675; padding: 18px 30px:
+  border: 1px solid white; background-color: #ffc5e675; padding: 18px 30px;
+}
+
+
+
+/* =============================== ABOUT PAGE FORM ================================ */
+
+form fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form {
+  color: white;
+  size: 50px;
+}
+
+form input{
+  color: white;
+}
+
+form label{
+  color: white;
+}
+
+form div .form{
+  color: #ffc5e5;
+  background-color: #ffc5e5;
+}
+
+/* Target text inputs, email inputs, select dropdowns, and textareas */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    background-color: pink;  /* Changes the background color of the text boxes */
+    color: #333333;             /* Changes the color of the text you type inside */
+    font-size: 16px;            /* Changes the text size */
+    padding: 8px;               /* Optional: adds inner spacing/padding */
+    border-radius: 25px;         /* Optional: rounds the corners slightly */
+    border-color: white;
+    width: 400px;
+
 }
