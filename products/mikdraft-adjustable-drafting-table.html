@@ -40,7 +40,7 @@
 
         <br>
 
-        <table>
+        <table class="table">
         <tr><th>Item<th>Mikdraft Adjustable Drafting Table</th></tr>
         <tr><th>Size<th>H:65cm W:100cm L:70cm</th></tr>
         <tr><th>Color<th>White & Pink</th></tr>
@@ -92,6 +92,59 @@
 
       </article>
    </main>
+
+
+   <form action="#" method="POST">
+    
+    <!-- 1. Quantity: Number input with min 1 and max 20 -->
+    <div>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+    </div>
+
+    <!-- 2. Delivery method: Radio buttons sharing the same name inside a fieldset -->
+    <fieldset>
+        <legend>Delivery method</legend>
+        <div>
+            <input type="radio" id="standard" name="delivery" value="standard" checked>
+            <label for="standard">Standard delivery</label>
+        </div>
+        <div>
+            <input type="radio" id="express" name="delivery" value="express">
+            <label for="express">Express delivery</label>
+        </div>
+    </fieldset>
+
+    <!-- 3. Extras: Checkboxes sharing a name attribute -->
+    <fieldset>
+        <legend>Extras</legend>
+        <div>
+            <input type="checkbox" id="gift-wrap" name="extras" value="gift-wrapping">
+            <label for="gift-wrap">Gift wrapping</label>
+        </div>
+        <div>
+            <input type="checkbox" id="express-handling" name="extras" value="express-handling">
+            <label for="express-handling">Express handling</label>
+        </div>
+        <div>
+            <input type="checkbox" id="none" name="extras" value="none">
+            <label for="none">None</label>
+        </div>
+    </fieldset>
+
+    <!-- 4. Contact email: Required email input -->
+    <div>
+        <label for="contact-email">Contact email</label>
+        <input type="email" id="contact-email" name="contact-email" required>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+        <button type="submit">Send enquiry</button>
+    </div>
+
+</form>
+
 
    <footer>
         <p>Contact Information:</p>

@@ -147,6 +147,7 @@ img {
 
 table {
   border-collapse: collapse;
+  
 }
   
 td, th {
@@ -194,4 +195,16 @@ textarea {
     border-color: white;
     width: 400px;
 
+}
+
+div input{
+  color: #ff63b9;
+}
+
+a{
+  color: #c0006a;
+}
+
+div table{
+  position: static;
 }
