@@ -199,7 +199,6 @@ textarea {
   max-width: 500px;
 }
 
-/* Accessible focus states required by Lesson 4.6 */
 input:focus,
 textarea:focus,
 select:focus,
@@ -208,7 +207,6 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* Styled Submit and Cart Buttons */
 button, 
 .btn {
   background-color: var(--brand);
@@ -225,6 +223,20 @@ button,
 button:hover, 
 .btn:hover {
   background-color: #900050;
+}
+
+table.table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffc5e675;
+  border: 2px solid var(--brand, #c0006a);
+}
+
+table.table th,
+table.table td {
+  border: 1px solid #c0006a;
+  padding: 12px;
+  text-align: left;
 }
 
 
