@@ -1,11 +1,11 @@
-
 /* ==========================================================================
    1. VARIABLES & RESET
    ========================================================================== */
 
 :root {
-  --brand: #ffc5e5;
-  --ink: #333;
+  --brand: #c0006a;          
+  --brand-light: #ffc5e5;   
+  --ink: #222222;            
   --muted: #fefefe;
   --paper: #f9f5f7;
 }
@@ -26,28 +26,26 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
+  color: var(--ink);
 }
 
 p {
   text-align: center;
-  color: #333;
+  color: var(--ink);
   font-family: 'times new roman', serif;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
 a {
-  color: #c0006a;
+  color: var(--brand);
 }
 
 img {
   display: block;
   margin: 0 auto;
   border-radius: 25px;
-}
-
-img #logo {
-  position: left;
+  border-color: pink;
 }
 
 
@@ -57,14 +55,16 @@ img #logo {
 
 h1 {
   text-align: center;
-  color: #f9f5f7;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   font-size: 70px;
   margin-bottom: 5px;   
 }
 
 h2 {
   text-align: center;
-  color: #fefefe;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   font-size: 30px;
   margin-bottom: 5px;
 }
@@ -74,7 +74,6 @@ h2 {
    4. HEADER & NAVIGATION
    ========================================================================== */
 
-/* ============================ Header =========================== */
 header {
    text-align: center;
    padding: 10px;
@@ -83,13 +82,9 @@ header {
 .header-content {
   display: flex;
   flex-direction: row;
-  align-items: top;     /* Vertically centers all elements in the row */
-  justify-content: flex-start; /* Aligns content starting from the left */
-  gap: 24px;               /* Adjusts horizontal spacing between items */
-}
-
-#logo {
-  height: auto;
+  align-items: top;
+  justify-content: flex-start;
+  gap: 24px;
 }
 
 #logo {
@@ -105,137 +100,131 @@ header {
 }
 
 @keyframes spin {
-  0% {
-  }
-  50% {
-    scale: 2;
-  }
+  0% {}
+  50% { scale: 2; }
   100% {
     transform: rotate(360deg);
     border-radius: 50%;
   }
 }
 
-/* ============================ NAVBAR =============================== */
-
 .navbar {
-  color: pink;
   justify-content: center;
 }
 
 .navbar ul {
   list-style-type: none;
-  background-color: pink;
+  background-color: var(--brand-light);
   padding: 0px;
   margin: 0px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
+.navbar li {
+  float: left;
+}
+
 .navbar a {
-  color: white;
+  color: var(--ink);
   text-decoration: none;
   padding: 15px;
   display: block;
+  font-weight: bold;
 }
 
 .navbar a:hover {
   background-color: #f9f5f7;
-  color: rgb(255, 121, 143);
+  color: var(--brand);
 }
 
 
 /* ==========================================================================
-   5. LISTS, TABLES & COMPONENTS
+   5. PRODUCT CARDS 
    ========================================================================== */
 
-ul {
+.product-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  border-left: 8px solid var(--brand); /* Coloured left border using brand variable */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+  font-size: 24px;
+  color: var(--brand);
+  margin-bottom: 10px;
   text-align: left;
-  list-style-type: disc;
-  color: #333;
-  font-size: 18px;
-  margin-bottom: 20px;
 }
 
-.Features {
+.product-card p {
   text-align: left;
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.search-box {
-  font-size: 30px;
-  align-items: center;
-  margin: 20px auto;
-  width: fit-content;
-  border: none;
-  outline: none;
-  display: flex;
-  position: center;
-  border-radius: 2.5em;
-  background-color: white;
-  text-align: center;
-  size: 30px;
-  padding: 10px 20px;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-td, th {
-  border: 1px solid white; 
-  background-color: #ffc5e675; 
-  padding: 18px 30px;
 }
 
 
 /* ==========================================================================
-   6. FORMS & INPUTS
+   6. CONTACT FORM & ACCESSIBLE FOCUS STATES
    ========================================================================== */
-
-/* =========== Target text inputs, email inputs, select dropdowns, and textareas========= */
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  background-color: pink;  
-  color: #333333;             
-  font-size: 16px;           
-  padding: 8px;             
-  border-radius: 25px;         
-  border-color: white;
-  width: 400px;
-}
-
-div input {
-  color: #ff63b9;
-}
-
-/* =============================== ABOUT PAGE FORM ================================ */
-
-form {
-  color: white;
-  size: 50px;
-}
 
 form fieldset {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--brand);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-form input {
-  color: white;
+legend {
+  color: var(--brand);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 10px;
 }
 
-form label {
-  color: white;
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  background-color: #ffffff;  
+  color: var(--ink);             
+  font-size: 16px;           
+  padding: 12px;             
+  border-radius: 8px;         
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 500px;
 }
 
-form div .form {
-  color: #ffc5e5;
-  background-color: #ffc5e5;
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+button, 
+.btn {
+  background-color: var(--brand);
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover, 
+.btn:hover {
+  background-color: #900050;
+
 }
 
 
@@ -245,9 +234,14 @@ form div .form {
 
 footer {
   text-align: center;
-  padding: 5px;
-  background-color: 67#ffc5e5;
-  color: #333;
-  font-size: 8px;
-  line-height: 0.5px;
+  padding: 15px;
+  background-color: var(--brand-light);
+  color: var(--ink);
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 5px;
 }
