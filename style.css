@@ -3,9 +3,9 @@
    ========================================================================== */
 
 :root {
-  --brand: #c0006a;          
-  --brand-light: #ffc5e5;   
-  --ink: #222222;            
+  --brand: #c0006a;          /* Dark pink brand accent with high contrast (passing 4.5:1) */
+  --brand-light: #ffc5e5;    /* Soft brand background */
+  --ink: #222222;            /* Dark readable text */
   --muted: #fefefe;
   --paper: #f9f5f7;
 }
@@ -45,7 +45,6 @@ img {
   display: block;
   margin: 0 auto;
   border-radius: 25px;
-  border-color: pink;
 }
 
 
@@ -56,7 +55,7 @@ img {
 h1 {
   text-align: center;
   color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Ensures contrast over background */
   font-size: 70px;
   margin-bottom: 5px;   
 }
@@ -141,7 +140,7 @@ header {
 
 
 /* ==========================================================================
-   5. PRODUCT CARDS 
+   5. PRODUCT CARDS (LESSON REQUIREMENTS)
    ========================================================================== */
 
 .product-card {
@@ -200,6 +199,7 @@ textarea {
   max-width: 500px;
 }
 
+/* Accessible focus states required by Lesson 4.6 */
 input:focus,
 textarea:focus,
 select:focus,
@@ -208,6 +208,7 @@ button:focus {
   outline-offset: 2px;
 }
 
+/* Styled Submit and Cart Buttons */
 button, 
 .btn {
   background-color: var(--brand);
@@ -224,7 +225,6 @@ button,
 button:hover, 
 .btn:hover {
   background-color: #900050;
-
 }
 
 
