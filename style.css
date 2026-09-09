@@ -9,7 +9,7 @@ header {
 .header-content {
   display: flex;
   flex-direction: row;
-  align-items: center;     /* Vertically centers all elements in the row */
+  align-items: top;     /* Vertically centers all elements in the row */
   justify-content: flex-start; /* Aligns content starting from the left */
   gap: 24px;               /* Adjusts horizontal spacing between items */
 }
@@ -143,11 +143,11 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-    background-color: pink;  /* Changes the background color of the text boxes */
-    color: #333333;             /* Changes the color of the text you type inside */
-    font-size: 16px;            /* Changes the text size */
-    padding: 8px;               /* Optional: adds inner spacing/padding */
-    border-radius: 25px;         /* Optional: rounds the corners slightly */
+    background-color: pink;  
+    color: #333333;             
+    font-size: 16px;           
+    padding: 8px;             
+    border-radius: 25px;         
     border-color: white;
     width: 400px;
 }
@@ -194,8 +194,8 @@ body {
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-    display: inline-block;
-    position: center;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar a {
@@ -213,8 +213,9 @@ body {
     float: left;
 }
 
-.navbar .navbar {
+.navbar {
   color: pink;
+  justify-content: center;
 }
 
 
