@@ -1,4 +1,78 @@
 
+/* ==========================================================================
+   1. VARIABLES & RESET
+   ========================================================================== */
+
+:root {
+  --brand: #ffc5e5;
+  --ink: #333;
+  --muted: #fefefe;
+  --paper: #f9f5f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   2. BASE & BODY
+   ========================================================================== */
+
+body {
+  background-image: url(images/mikdraft_bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+p {
+  text-align: center;
+  color: #333;
+  font-family: 'times new roman', serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #c0006a;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+img #logo {
+  position: left;
+}
+
+
+/* ==========================================================================
+   3. TYPOGRAPHY & HEADINGS
+   ========================================================================== */
+
+h1 {
+  text-align: center;
+  color: #f9f5f7;
+  font-size: 70px;
+  margin-bottom: 5px;   
+}
+
+h2 {
+  text-align: center;
+  color: #fefefe;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+
+/* ==========================================================================
+   4. HEADER & NAVIGATION
+   ========================================================================== */
 
 /* ============================ Header =========================== */
 header {
@@ -14,53 +88,66 @@ header {
   gap: 24px;               /* Adjusts horizontal spacing between items */
 }
 
-/* Optional logo sizing constraint */
 #logo {
   height: auto;
 }
 
-/* ========================== Headings ============================ */
-h1 {
-  text-align: center;
-  color: #f9f5f7;
-  font-size: 70px;
-  margin-bottom: 5px;   
+#logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  animation-duration: 1s;
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+  }
+  50% {
+    scale: 2;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+}
+
+/* ============================ NAVBAR =============================== */
+
+.navbar {
+  color: pink;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: pink;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #f9f5f7;
+  color: rgb(255, 121, 143);
 }
 
 
-h2 {
-  text-align: center;
-  color: #fefefe;
-  font-size: 30px;
-  margin-bottom: 5px;
-}
-
-
-p {
-  text-align: center;
-  color: #333;
-  font-family: 'times new roman', serif;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-
-footer {
-  text-align: center;
-  padding: 5px;
-  background-color: 67#ffc5e5;
-  color: #333;
-  font-size: 8px;
-  line-height: 0.5px;
-}
-
-
-.Features {
-  text-align: left;
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
+/* ==========================================================================
+   5. LISTS, TABLES & COMPONENTS
+   ========================================================================== */
 
 ul {
   text-align: left;
@@ -70,18 +157,11 @@ ul {
   margin-bottom: 20px;
 }
 
-
-img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 25px;
+.Features {
+  text-align: left;
+  list-style-type: disc;
+  margin-left: 20px;
 }
-
-img #logo {
-  position: left;
-  
-}
-
 
 .search-box {
   font-size: 30px;
@@ -99,149 +179,75 @@ img #logo {
   padding: 10px 20px;
 }
 
-
-#logo {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  animation-duration: 1s;
-  animation-name: spin;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-   
-  
-            }
-    @keyframes spin{
-        0%{
-        }
-        50%{
-            scale: 2;
-        }
-        100%{
-          transform: rotate(360deg);
-          border-radius: 50%;
-            
-        }
-    }
-
-
 table {
   border-collapse: collapse;
-  
 }
-  
+
 td, th {
-  border: 1px solid white; background-color: #ffc5e675; padding: 18px 30px;
+  border: 1px solid white; 
+  background-color: #ffc5e675; 
+  padding: 18px 30px;
 }
 
 
+/* ==========================================================================
+   6. FORMS & INPUTS
+   ========================================================================== */
 
 /* =========== Target text inputs, email inputs, select dropdowns, and textareas========= */
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-    background-color: pink;  
-    color: #333333;             
-    font-size: 16px;           
-    padding: 8px;             
-    border-radius: 25px;         
-    border-color: white;
-    width: 400px;
+  background-color: pink;  
+  color: #333333;             
+  font-size: 16px;           
+  padding: 8px;             
+  border-radius: 25px;         
+  border-color: white;
+  width: 400px;
 }
 
-div input{
+div input {
   color: #ff63b9;
 }
 
-a{
-  color: #c0006a;
-}
-
-
-/* ============================== variables ================================ */
-:root{
-  --brand: #ffc5e5;
-  --ink: #333;
-  --muted: #fefefe;
-  --paper: #f9f5f7;
-}
-
-
-/* ============================= base / reset =============================== */
-*{
-  box-sizing: border-box;
-}
-
-          
-body {
-  background-image: url(images/mikdraft_bg.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-
-/* ============================ NAVBAR =============================== */
-
-.navbar ul {
-    list-style-type: none;
-    background-color: pink;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-}
-
-.navbar a:hover {
-    background-color: #f9f5f7;
-}
-
-.navbar li {
-    float: left;
-}
-
-.navbar {
-  color: pink;
-  justify-content: center;
-}
-
-
-
 /* =============================== ABOUT PAGE FORM ================================ */
-
-form fieldset{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
 
 form {
   color: white;
   size: 50px;
 }
 
-form input{
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
   color: white;
 }
 
-form label{
+form label {
   color: white;
 }
 
-form div .form{
+form div .form {
   color: #ffc5e5;
   background-color: #ffc5e5;
+}
+
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: 67#ffc5e5;
+  color: #333;
+  font-size: 8px;
+  line-height: 0.5px;
 }

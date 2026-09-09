@@ -1,76 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mikdraft</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-<style>
-.navbar ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-}
-
-.navbar a:hover {
-    color: rgb(255, 121, 143);
-}
-
-.navbar li {
-    float: left;
-}
-
-.navbar {
-    justify-content: center;
-}
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikdraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
+    <!-- ==========================================================================
+       1. HEADER & LOGO
+       ========================================================================== -->
     <header>
-        <h1>Mikdraft</h1>
-        <p>Draw. Draft. Create.</p>
-        <section>
-            <h2>Hanna Kim Espedilla</h2>
-            <p>Bringing your creative blueprints to life.</p>
-            <img class="logo" src="Mikdraft_logo.png" alt="Mikdraft_Logo" width="200" height="200">
-        </section>
+        <div class="header-content">
+            <img id="logo" src="Mikdraft_logo.png" alt="Mikdraft Logo">
+            
+            <div class="text-block">
+                <h1>Mikdraft</h1>
+                <p class="tagline">Draw. Draft. Create.</p>
+                <h2>Hanna Kim Espedilla</h2>
+                <p class="subtext">Bringing your creative blueprints to life.</p>
+            </div>
+        </div>
+    </header>
 
-        <ul>
-           <li><a href="https://hespedilla-dev.github.io/mikdraft/">Mikdraft</a></li>
-        </ul>
 
-      <nav class="navbar">
+    <!-- ==========================================================================
+       2. NAVIGATION BAR
+       ========================================================================== -->
+    <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-       </nav>
-      </header>
+    </nav>
 
 
-      <!-- ========================= This part shows the form ========================== -->
-
+    <!-- ==========================================================================
+       3. MAIN CONTENT & CONTACT FORM
+       ========================================================================== -->
     <main>
         <h2>Contact Us</h2>
         
+        <!-- ========================= This part shows the form ========================== -->
         <form action="#" method="POST" class="form">
             <fieldset>
                 <legend>Your details</legend>
 
                 <!-- 1. Name: Required text input -->
-                <div >
+                <div>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
@@ -107,14 +87,23 @@
             </fieldset>
         </form>
 
-     <footer>
-        <p>Contact Information:</p>
-        <p>Email: <a href="mailto:hannakim.espedilla@tup.edu.ph">hannakim.espedilla@tup.edu.ph</a></p>
-        <p>Phone: <a href="tel:+639123456789">+63 949 910 5002</a></p>
-        <p>facebook: <a href="https://www.facebook.com/hannaespedilla">Hanna Kim Espedilla</a></p>
-        <p>&copy; 2026 Mikdraft. All rights reserved.</p>
-    </footer>
-     </main>
+        <!-- Main Links -->
+        <ul>
+            <li><a href="https://hespedilla-dev.github.io/mikdraft/">Mikdraft</a></li>
+        </ul>
+
+
+        <!-- ==========================================================================
+           4. FOOTER
+           ========================================================================== -->
+        <footer>
+            <p>Contact Information:</p>
+            <p>Email: <a href="mailto:hannakim.espedilla@tup.edu.ph">hannakim.espedilla@tup.edu.ph</a></p>
+            <p>Phone: <a href="tel:+639123456789">+63 949 910 5002</a></p>
+            <p>facebook: <a href="https://www.facebook.com/hannaespedilla">Hanna Kim Espedilla</a></p>
+            <p>&copy; 2026 Mikdraft. All rights reserved.</p>
+        </footer>
+    </main>
 
 </body>
 </html>
