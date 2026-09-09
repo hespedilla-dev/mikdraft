@@ -1,10 +1,25 @@
 
+
+/* ============================ Header =========================== */
 header {
    text-align: center;
    padding: 10px;
 }
 
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;     /* Vertically centers all elements in the row */
+  justify-content: flex-start; /* Aligns content starting from the left */
+  gap: 24px;               /* Adjusts horizontal spacing between items */
+}
 
+/* Optional logo sizing constraint */
+#logo {
+  height: auto;
+}
+
+/* ========================== Headings ============================ */
 h1 {
   text-align: center;
   color: #f9f5f7;
@@ -64,6 +79,7 @@ img {
 
 img #logo {
   position: left;
+  
 }
 
 
@@ -121,6 +137,7 @@ td, th {
 }
 
 
+
 /* =========== Target text inputs, email inputs, select dropdowns, and textareas========= */
 input[type="text"],
 input[type="email"],
@@ -133,7 +150,6 @@ textarea {
     border-radius: 25px;         /* Optional: rounds the corners slightly */
     border-color: white;
     width: 400px;
-
 }
 
 div input{
@@ -179,6 +195,7 @@ body {
     margin: 0px;
     overflow: hidden;
     display: inline-block;
+    position: center;
 }
 
 .navbar a {
