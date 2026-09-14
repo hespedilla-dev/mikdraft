@@ -61,10 +61,6 @@ h1 {
   margin-bottom: 5px;   
 }
 
-h1.product-title {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
 
 h2 {
   text-align: center;
@@ -72,6 +68,12 @@ h2 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   font-size: 30px;
   margin-bottom: 5px;
+}
+
+/* product card content */
+h1.product-title {
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 
