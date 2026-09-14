@@ -42,6 +42,11 @@ a {
   color: var(--brand);
 }
 
+a.details {
+  text-align: center;
+  display: block;
+}
+
 img {
   display: block;
   margin: 0 auto;

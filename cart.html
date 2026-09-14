@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Mikdraft</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+         <header class="site-header">
+    <div class="site-brand">
+        <img id="logo" src="Mikdraft_logo.png" alt="Mikdraft Logo">
+        <h1>Mikdraft</h1>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav> 
+</header>
+
+    <main>
+       <h1>Shopping Cart</h1>
+       <article>
+         <h2>Your Selected Items</h2>
+
+         <div class="product-list">
+         <p>
+            Review the drafting tools and supplies in your cart before proceeding to checkout. You can update quantities or remove items prior to placing your order.
+         </p>
+         </div>
+
+         <br>
+
+         <!-- Cart Table Form -->
+         <form action="#" method="POST">
+             <table class="table">
+                 <thead>
+                     <tr>
+                         <th>Product</th>
+                         <th>Item Details</th>
+                         <th>Price</th>
+                         <th>Quantity</th>
+                         <th>Total</th>
+                         <th>Action</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <!-- Item 1: Drafting Table -->
+                     <tr>
+                         <td>
+                             <img src="/products/images/image.png" alt="Mikdraft Adjustable Drafting Table" height="80" width="80">
+                         </td>
+                         <td>
+                             <strong>Mikdraft Adjustable Drafting Table</strong><br>
+                             <small>Color: White & Pink</small>
+                         </td>
+                         <td>₱3,500.00</td>
+                         <td>
+                             <input type="number" name="cart-qty-1" value="1" min="1" max="20" style="width: 50px;">
+                         </td>
+                         <td>₱3,500.00</td>
+                         <td>
+                             <button type="button">Remove</button>
+                         </td>
+                     </tr>
+
+                     <!-- Item 2: Tracing Paper -->
+                     <tr>
+                         <td>
+                             <img src="/products/images/tracing-paper.png" alt="Mikdraft Tracing Paper" height="80" width="80">
+                         </td>
+                         <td>
+                             <strong>Mikdraft Tracing Paper</strong><br>
+                             <small>Size: A4 / 50 Sheets</small>
+                         </td>
+                         <td>₱150.00</td>
+                         <td>
+                             <input type="number" name="cart-qty-2" value="2" min="1" max="20" style="width: 50px;">
+                         </td>
+                         <td>₱300.00</td>
+                         <td>
+                             <button type="button">Remove</button>
+                         </td>
+                     </tr>
+
+                     <!-- Item 3: Math Set -->
+                     <tr>
+                         <td>
+                             <img src="/products/images/math-set.png" alt="Mikdraft Math Set" height="80" width="80">
+                         </td>
+                         <td>
+                             <strong>Mikdraft Math Set</strong><br>
+                             <small>Includes: Metal Tin Case</small>
+                         </td>
+                         <td>₱250.00</td>
+                         <td>
+                             <input type="number" name="cart-qty-3" value="1" min="1" max="20" style="width: 50px;">
+                         </td>
+                         <td>₱250.00</td>
+                         <td>
+                             <button type="button">Remove</button>
+                         </td>
+                     </tr>
+                 </tbody>
+             </table>
+
+             <br>
+
+             <!-- Order Summary Section -->
+             <div class="product-list" style="background-color:#ffc5e675; opacity: 1; padding: 20px; border-radius: 50px;">
+                 <h3>Order Summary</h3>
+                 <p><strong>Subtotal:</strong> ₱4,050.00</p>
+                 <p><strong>Estimated Shipping:</strong> Standard Delivery (Calculated at checkout)</p>
+                 <hr>
+                 <h3>Total Amount: ₱4,050.00</h3>
+                 
+                 <br>
+
+                 <div>
+                     <button type="submit" name="update-cart">Update Cart</button>
+                     <button type="submit" name="checkout">Proceed to Checkout</button>
+                 </div>
+             </div>
+         </form>
+
+       </article>
+    </main>
+
+    <br>
+
+    <nav class="navbar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+      </nav> 
+
+    <footer>
+        <p>Contact Information:</p>
+        <p>Email: <a href="mailto:hannakim.espedilla@tup.edu.ph">hannakim.espedilla@tup.edu.ph</a></p>
+        <p>Phone: <a href="tel:+639123456789">+63 949 910 5002</a></p>
+        <p>facebook: <a href="https://www.facebook.com/hannaespedilla">Hanna Kim Espedilla</a></p>
+        <p>&copy; 2026 Mikdraft. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
