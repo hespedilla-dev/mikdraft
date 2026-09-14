@@ -27,6 +27,7 @@ body {
   background-attachment: fixed;
   height: 100vh;
   color: var(--ink);
+  padding-top: 80px; /* To account for fixed header */
 }
 
 p {
@@ -80,6 +81,12 @@ h2 {
   align-items: center;
   padding: 15px 30px;
   background-color: var(--brand);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Site Brand  yung Logo + Title) */
