@@ -70,72 +70,89 @@ h2 {
 
 
 /* ==========================================================================
-   4. HEADER & NAVIGATION
+   4. HEADER & NAVIGATION (LESSON REQUIREMENTS)
    ========================================================================== */
 
-header {
-   text-align: center;
-   padding: 10px;
+/* Header Container: Flexbox Space-Between */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--brand);
 }
 
-.header-content {
+/* Site Brand (Logo + Title) */
+.site-brand {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 24px;
+  gap: 15px;
+}
+
+.site-brand h1 {
+  font-size: 32px;
+  margin: 0;
+  color: #ffffff;
 }
 
 #logo {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  animation-duration: 1s;
-  animation-name: spin;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
-@keyframes spin {
-  0% {}
-  50% { scale: 2; }
-  100% {
-    transform: rotate(360deg);
-    border-radius: 50%;
-  }
-}
-
-.navbar {
-  justify-content: center;
-}
-
+/* Navigation Menu */
 .navbar ul {
-  list-style-type: none;
-  background-color: var(--brand-light);
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
+  gap: 20px; /* Spacing between nav links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+/* Clear float or inline-block behavior */
 .navbar li {
-  float: left;
+  float: none;
 }
 
 .navbar a {
-  color: var(--ink);
+  color: #ffffff;
   text-decoration: none;
-  padding: 15px;
-  display: block;
   font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
 }
 
 .navbar a:hover {
-  background-color: #f9f5f7;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+
+/* ==========================================================================
+   CENTERED HERO BANNER (LESSON 6.4 CENTERING)
+   ========================================================================== */
+
+.hero-banner {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 250px;           /* Required height for vertical centering */
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.hero-content h2 {
   color: var(--brand);
+  text-shadow: none;
+  margin-bottom: 8px;
+}
+
+.hero-content p {
+  margin-bottom: 5px;
 }
 
 
@@ -164,14 +181,14 @@ header {
   
   /* Smooth transition for size and depth changes */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative; /* Allows z-index to bring it forward */
+  position: relative;
 }
 
-/* Pop-out Hover Effect */
+/* Hover Effect */
 .product-card:hover {
-  transform: scale(1.05); /* Scales the card 5% larger */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deepens shadow for elevation */
-  z-index: 10; /* Places hovered card on top of surrounding cards */
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 

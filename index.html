@@ -9,50 +9,51 @@
 
 <body>
 
-    <!-- ==========================================================================
-       1. HEADER & LOGO
-       ========================================================================== -->
-    <header>
-        <div class="header-content">
-            <img id="logo" src="Mikdraft_logo.png" alt="Mikdraft Logo">
-            
-            <div class="text-block">
-                <h1>Mikdraft</h1>
-                <p class="tagline">Draw. Draft. Create.</p>
-                <h2>Hanna Kim Espedilla</h2>
-                <p class="subtext">Bringing your creative blueprints to life.</p>
-            </div>
-        </div>
-    </header>
+<!-- ==========================================================================
+   1. HEADER & NAVIGATION (Flexbox Split)
+   ========================================================================== -->
+<header class="site-header">
+    <div class="site-brand">
+        <img id="logo" src="Mikdraft_logo.png" alt="Mikdraft Logo">
+        <h1>Mikdraft</h1>
+    </div>
 
-
-    <!-- ==========================================================================
-       2. NAVIGATION BAR
-       ========================================================================== -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>  
-    <br>
+    </nav> 
+</header>
 
-    <!-- ==========================================================================
-       3. MAIN CONTENT AREA
-       ========================================================================== -->
-    <main>
-        <!-- Search Bar -->
-        <form class="search-box">
-            <input type="text" placeholder="Search products..."/>
-            <button type="reset">Search</button>
-        </form>
-        
-        <!-- Section Introduction -->
-<div class="introduction">
-    <h2>Mikdraft's Products</h2>
-    <p>Explore our range of drafting essentials designed to enhance your creative process.</p>
-</div>
+<main>
+    <!-- Centered Banner (Lesson 6.4 Centering Technique) -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h2>Hanna Kim Espedilla</h2>
+            <p class="tagline">Draw. Draft. Create.</p>
+            <p class="subtext">Bringing your creative blueprints to life.</p>
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <form class="search-box" id="searchForm" onsubmit="return false;">
+        <input type="text" id="searchInput" placeholder="Search products..."/>
+        <button type="submit">Search</button>
+    </form>
+    
+    <!-- Section Introduction -->
+    <div class="introduction">
+        <h2>Mikdraft's Products</h2>
+        <p>Explore our range of drafting essentials designed to enhance your creative process.</p>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+        <!-- Product Cards Here -->
+    </div>
+</main>
 
 <!-- Add the .product-grid wrapper around your cards -->
 <div class="product-grid">
@@ -63,7 +64,7 @@
             <h3 class="product-title">Mikdraft Adjustable Drafting Table</h3>
             <p><strong>₱3,500.00</strong></p>
             <img src="images/mikdraft_drafting_table.jpeg" alt="mikdraft-drafting-table" width="200" height="200">
-            <a href="products/mikdraft-adjustable-drafting-table.html" class="details">View Details</a>
+            <a href="products/drafting-table.html" class="details">View Details</a>
         </article>
         <a href="https://hespedilla-dev.github.io/mikdraft/"><button type="button" class="btn">Add to cart.</button></a>
     </div>
@@ -166,5 +167,8 @@
         <p>&copy; 2026 Mikdraft. All rights reserved.</p>
     </footer>
 
+
+    <!-- external javascript file -->
+    <script src="script.js"></script>
 </body>
 </html>
