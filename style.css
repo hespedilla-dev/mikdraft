@@ -3,9 +3,9 @@
    ========================================================================== */
 
 :root {
-  --brand: #c0006a;          /* Dark pink brand accent with high contrast (passing 4.5:1) */
-  --brand-light: #ffc5e5;    /* Soft brand background */
-  --ink: #222222;            /* Dark readable text */
+  --brand: #c0006a;          
+  --brand-light: #ffc5e5;    
+  --ink: #222222;           
   --muted: #fefefe;
   --paper: #f9f5f7;
 }
@@ -81,7 +81,7 @@ header {
 .header-content {
   display: flex;
   flex-direction: row;
-  align-items: top;
+  align-items: center;
   justify-content: flex-start;
   gap: 24px;
 }
@@ -118,7 +118,7 @@ header {
   margin: 0px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .navbar li {
@@ -143,12 +143,23 @@ header {
    5. PRODUCT CARDS (LESSON REQUIREMENTS)
    ========================================================================== */
 
+/* Product Grid Layout */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Individual Product Cards */
 .product-card {
+  flex: 1 1 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
   padding: 20px;
-  margin-bottom: 24px;
-  border-left: 8px solid var(--brand); /* Coloured left border using brand variable */
+  border-left: 8px solid var(--brand);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -162,6 +173,7 @@ header {
 .product-card p {
   text-align: left;
 }
+
 
 
 /* ==========================================================================
