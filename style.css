@@ -161,19 +161,18 @@ header {
   padding: 20px;
   border-left: 8px solid var(--brand);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Smooth transition for size and depth changes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Allows z-index to bring it forward */
 }
 
-.product-title {
-  font-size: 24px;
-  color: var(--brand);
-  margin-bottom: 10px;
-  text-align: left;
+/* Pop-out Hover Effect */
+.product-card:hover {
+  transform: scale(1.05); /* Scales the card 5% larger */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deepens shadow for elevation */
+  z-index: 10; /* Places hovered card on top of surrounding cards */
 }
-
-.product-card p {
-  text-align: left;
-}
-
 
 
 /* ==========================================================================
